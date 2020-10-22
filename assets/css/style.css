@@ -46,7 +46,7 @@ header nav {
 }
  /* nav list specifics */
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
@@ -91,6 +91,7 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: flex-start
 }
 .hero-form {
   border: 3px solid #024e76;
@@ -127,6 +128,9 @@ section {
   padding: 10px 20px;
   font-size: 16px;
 }
+.hero-cta {
+  line-height: 1.2;
+}
 /* Hero End */
 }
 .intro p {
@@ -137,7 +141,7 @@ section {
   text-align: center
 }
 .section-title {
-  font-size: 55px;
+  font-size: 48px;
   color: #024e76;
   border-bottom: 3px solid;
 }
@@ -229,7 +233,7 @@ primary-border {
 }
 /* reach out */
 .section-title {
-  font-size: 55px;
+  font-size: 48px;
   display: inline-block;
   padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
@@ -305,4 +309,24 @@ font-size: 16px
   font-style: italic;
   font-size: 55px;
   color: #fce138;
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header h1 a {
+    /* this will be applied on any screen smaller than 980px */
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  header h1 {
+    /* this will be applied on any screen between 768px and 575px */
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header h1 {
+    /* this will be applied on any screen smaller than 575px */
+  }
 }
