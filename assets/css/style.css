@@ -132,7 +132,6 @@ section {
   line-height: 1.2;
 }
 /* Hero End */
-}
 .intro p {
   line-height: 1.7;
   color: #39a6b2;
@@ -196,12 +195,11 @@ primary-border {
   max-width: 100%;
 }
 /* trainers */
-}
 .trainer {
   margin: 20px;
   background: #024e76;
   color: #fce138;
-  flex: 1
+  flex: 1;
 }
 .trainer img {
   width: 100%;
@@ -282,19 +280,19 @@ primary-border {
 .contact-form input, .contact-form textarea {
 border: 1px solid #024e76; 
 display: block;
-padding: 7px 15px
-font-size: 16px
-color: #024e76
-width: 100%
+padding: 7px 15px;
+font-size: 16px;
+color: #024e76;
+width: 100%;
 }
 .contact-form button {
-width: 100%
-border: none
-background: #fce138
-color: #024e76
-text-align: center
-padding: 15px 0
-font-size: 16px
+width: 100%;
+border: none;
+background: #fce138;
+color: #024e76;
+text-align: center;
+padding: 15px 0;
+font-size: 16px;
 }
 /* REACH OUT STYLES END */
 .hero-cta {
@@ -315,30 +313,37 @@ font-size: 16px
   display: grid;
 }
 .service-grid-item {
-  width: 200px;
-  height: 50px;
   background-color: orange;
   border: solid;
+  padding: 1em;
   color: black;
-}
-.service-grid-container {
-  display: grid;
-  grid-template-columns: 200px 200px;
-}
-.service-grid-container {
-  display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: 50px 50px 50px;
-}
-.service-grid-container {
-  display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: 50px 50px 50px;
 }
 .service-grid-container {
   display: grid;
   grid-template-columns: 210px 210px;
   grid-template-rows: 60px 60px 60px;
+}
+.service-grid-container {
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 10px;
+}
+.box1 {
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+  grid-row-end: 3; 
+}
+.box1 {
+  grid-column: 1/ span 1; 
+  grid-row: 1/ span 2; 
+}
+.box2 {
+  grid-column: 3/4; 
+  grid-row: 1/-1; 
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
